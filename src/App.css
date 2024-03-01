@@ -1,0 +1,65 @@
+/* App.css */
+body {
+  margin: 0; /* Reset default body margin */
+  font-family: Arial, sans-serif; /* Set a default font-family */
+  height: 100vh; /* Set body height to the viewport height */
+}
+
+/* Background image for devices with a maximum width of 480px */
+@media only screen and (max-width: 480px) {
+  body {
+    background-image: url("./img/mob.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: red;
+    opacity: 0.8;
+    padding: 20px;
+    border-radius: 10px;
+    z-index: 1;
+
+  }
+}
+
+/* Background image for devices with a minimum width of 481px */
+@media only screen and (min-width: 481px) {
+  body {
+    background-image: url("./img/car3.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(36, 95, 255);
+    opacity: 0.8;
+    padding: 20px;
+    border-radius: 10px;
+    z-index: 1;
+    width: 600px;
+    height: auto;
+  }
+  
+}
+
+/* Other styles for your form */
+
+/* Additional styles for your form elements */
+.form h2 {
+  color: white; /* Set text color to white */
+}
+
+
+.popup {
+  z-index: 999;
+}
+/* ... other styles ... */
