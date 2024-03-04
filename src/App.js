@@ -38,7 +38,7 @@ function App() {
             Mobile: formData.Mobile,
             Name: formData.Name,
             Gender: formData.Gender,
-            Vehicle: 'Car',
+           
             } 
           });
 
