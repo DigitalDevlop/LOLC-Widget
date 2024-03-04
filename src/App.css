@@ -8,20 +8,20 @@ body {
 /* Background image for devices with a maximum width of 480px */
 @media only screen and (max-width: 480px) {
   body {
-    background-image: url("./img/mob.jpg");
+    background-image: url("./img/mobi.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
   }
   .form {
     position: absolute;
-    top: 50%;
+    top: 30%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: red;
+    background-color: rgb(51, 54, 252);
     opacity: 0.8;
-    padding: 20px;
-    border-radius: 10px;
+    padding: 5px;
+    border-radius: 5px;
     z-index: 1;
 
   }
@@ -38,14 +38,14 @@ body {
   .form {
     position: absolute;
     top: 50%;
-    left: 50%;
+    left: 80%;
     transform: translate(-50%, -50%);
     background-color: rgb(36, 95, 255);
     opacity: 0.8;
     padding: 20px;
     border-radius: 10px;
     z-index: 1;
-    width: 600px;
+    width: 400px;
     height: auto;
   }
   
