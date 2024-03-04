@@ -33,7 +33,7 @@ function App() {
     }
 
     try {
-        const response = await axios.post('https://widget-cms.adstudio.cloud/api/lb-finance-campaigns', {
+        const response = await axios.post('https://widget-cms.adstudio.cloud/api/lolc-widgets', {
             data: {
             Mobile: formData.Mobile,
             Name: formData.Name,
