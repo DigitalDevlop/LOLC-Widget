@@ -10,7 +10,7 @@ function App() {
   const [formData, setFormData] = useState({
     Mobile: '',
     Name: '',
-    Gender: 'Male',
+    City: '',
   });
 
   const [popup, setPopup] = useState({
@@ -33,11 +33,11 @@ function App() {
     }
 
     try {
-        const response = await axios.post('https://widget-cms.adstudio.cloud/api/lolc-widgets', {
+        const response = await axios.post('https://widget-cms.adstudio.cloud/api/lb-finance-campaigns', {
             data: {
             Mobile: formData.Mobile,
             Name: formData.Name,
-            Gender: formData.Gender,
+            Gender: formData.City,
            
             } 
           });
@@ -54,7 +54,7 @@ function App() {
       setFormData({
         Mobile: '',
         Name: '',
-        Gender: 'Male',
+        Gender: '',
       });
     } catch (error) {
       setPopup({
@@ -109,30 +109,16 @@ function App() {
             />
           </div>
           <div>
-            <label className="text-white block">Gender</label>
+            <label className="text-white block">City</label>
             <div className="flex items-center space-x-4">
-              <label className="text-white">
-                <input
-                  type="radio"
-                  name="Gender"
-                  value="Male"
-                  checked={formData.Gender === 'Male'}
-                  onChange={handleChange}
-                  className="mr-2 cursor-pointer"
-                />
-                Male
-              </label>
-              <label className="text-white">
-                <input
-                  type="radio"
-                  name="Gender"
-                  value="Female"
-                  checked={formData.Gender === 'Female'}
-                  onChange={handleChange}
-                  className="mr-2 cursor-pointer"
-                />
-                Female
-              </label>
+            <input
+              type="text"
+              name="City"
+              value={formData.City}
+              onChange={handleChange}
+              className="w-full bg-white p-2 rounded-md"
+              placeholder="Enter your City"
+            />
             </div>
             </div>
             <div className="text-center">
