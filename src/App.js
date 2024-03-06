@@ -123,13 +123,18 @@ function App() {
             </div>
             <div className="text-center">
             <button
-              type="submit"
-              disabled={!formData.Mobile || !formData.Name}
-              className={`bg-white text-blue-500 px-6 py-2 rounded-full ${(!formData.Mobile || !formData.Name) ? 'opacity-50 cursor-not-allowed' : 'hover:bg-blue-700 hover:text-white transition duration-300 cursor-pointer'
-                }`}
-            >
-              Submit
+                 type="submit"
+                 disabled={!formData.Mobile || !formData.Name}
+                 className={`bg-white text-blue-500 px-6 py-2 rounded-full ${
+                            !formData.Mobile || !formData.Name
+                            ? "opacity-50 cursor-not-allowed"
+                             : "hover:bg-blue-700 hover:text-white transition duration-300 cursor-pointer"
+    }`}
+                                style={{ padding: "7px", margin: "10px" }}
+>
+                                            Submit
             </button>
+
 
 
           </div>
