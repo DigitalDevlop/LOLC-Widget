@@ -2,7 +2,7 @@
 body {
   margin: 0; /* Reset default body margin */
   font-family: Arial, sans-serif; /* Set a default font-family */
-  height: 100vh; /* Set body height to the viewport height */
+  height: 90vh; /* Set body height to the viewport height */
 }
 
 /* Background image for devices with a maximum width of 480px */
@@ -33,6 +33,7 @@ body {
     background-image: url("./img/car3.jpg");
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
     background-position: center;
   }
   .form {
