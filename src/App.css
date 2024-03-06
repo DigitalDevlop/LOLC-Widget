@@ -2,7 +2,7 @@
 body {
   margin: 0; /* Reset default body margin */
   font-family: Arial, sans-serif; /* Set a default font-family */
-  height: 90vh; /* Set body height to the viewport height */
+  height: 100vh; /* Set body height to the viewport height */
 }
 
 /* Background image for devices with a maximum width of 480px */
